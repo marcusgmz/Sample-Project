@@ -38,7 +38,8 @@ function doPost(e) {
 
 // Lets you open the web app URL in a browser to check it's running
 function doGet() {
-  return ContentService.createTextOutput("Applicant form web app is running.");
+  // Bump the version number whenever this file changes, to confirm the new code is live
+  return ContentService.createTextOutput("Applicant form web app is running (v2).");
 }
 
 // Gets the "Applicants" tab, creating it with headers if it doesn't exist yet
